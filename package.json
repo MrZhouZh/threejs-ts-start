@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "sideEffects": false,
   "scripts": {
-    "dev": "webpack serve --config ./src/client/webpack.dev.js --mode=development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack serve --config ./src/client/webpack.dev.js --mode=development"
   },
   "keywords": [],
   "author": "",

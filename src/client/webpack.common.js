@@ -18,4 +18,14 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    usedExports: true,
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+        }
+      }
+    }
+  },
 }
