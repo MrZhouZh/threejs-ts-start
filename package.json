@@ -5,7 +5,9 @@
   "main": "index.js",
   "sideEffects": false,
   "scripts": {
-    "dev": "webpack serve --config ./src/client/webpack.dev.js --mode=development"
+    "dev": "webpack serve --config ./src/client/webpack.dev.js --mode=development",
+    "build": "webpack --config ./src/client/webpack.prod.js",
+    "deploy": "gh-pages -d ./dist/client"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "@types/dat.gui": "^0.7.10",
     "@types/three": "^0.152.1",
     "dat.gui": "^0.7.9",
+    "gh-pages": "^5.0.0",
     "three": "^0.153.0",
     "ts-loader": "^9.4.3",
     "typescript": "^5.1.3",
